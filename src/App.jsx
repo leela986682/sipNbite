@@ -13,8 +13,8 @@ export const cartContext = createContext();
 function App() {
   const [cartItems, setCartItems] = useState([]);
   return (
-    <div className='overflow-x-hidden scrollbar-hide'>
-      <div className="relative min-h-screen w-screen">
+    <div className='overflow-x-hidden scroll-smooth scrollbar-hide'>
+      <div className="relative min-h-screen w-[99%]">
         <Header />
         <main className="w-fit h-fit">
           <cartContext.Provider value={{ cartItems, setCartItems }}>

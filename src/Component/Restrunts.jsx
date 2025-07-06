@@ -42,7 +42,7 @@ function Restrunts() {
     return (
         <div>
             <div className='m-3'><h1 className='text-xs text-orange-500 font-semibold lg:text-lg lg:font-bold motion-preset-oscillate '>Hey! Thought of going out for dinner with some friends </h1></div>
-            <div className='flex gap-3 rounded-lg w-full'>
+            <div className='flex gap-3 justify-center rounded-lg w-full'>
                 {places.map((obj, i) => (
                     <div key={i} className='hidden lg:block md:block'>
                         <div onClick={goToCart}
@@ -65,7 +65,7 @@ function Restrunts() {
 
                 ))}
             </div>
-            <div className=' lg:hidden overflow-y-auto w-screen border-2 shadow-inner h-72'>
+            <div className=' md:hidden lg:hidden overflow-y-auto w-screen border-2 shadow-inner h-72'>
                 {places.map((obj, i) => (
                     <div key={i} className='grid gap-2'>
                         <div onClick={goToCart} className='p-2'>

@@ -64,7 +64,7 @@ function Overview() {
                     </div>
                 </div>
                 <div>
-                    <img src={poster} />
+                    <img src={poster} className='w-screen' />
                 </div>
                 <div onClick={goToDine} className='grid border-2 bg-white z-50 w-[90%] mx-auto rounded-2xl shadow-2xl shadow-orange-500 m-5 p-3 h-28'>
                     <span className='text-gray-500 font-extralight'>Select Restaurant</span>
